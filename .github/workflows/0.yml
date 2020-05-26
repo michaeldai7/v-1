@@ -1,0 +1,16 @@
+name: DEBUG
+on:
+  watch:
+    types: [started]
+    
+#  push:
+#    branches: 
+#      - master
+  
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v1
