@@ -1,4 +1,4 @@
-name: DEBUG
+name: BOOT
 on:
   watch:
     types: [started]
@@ -9,8 +9,11 @@ on:
   
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
-    - uses: actions/checkout@v1
-    - name: Setup tmate session
-      uses: mxschmitt/action-tmate@v1
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Run boot script
+      run: |
+        ./autoexec.sh
