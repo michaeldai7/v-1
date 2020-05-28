@@ -18,6 +18,6 @@ jobs:
       run: |
         ./autoexec.sh
         
-    - uses: actions/checkout@v1
-    - name: Setup tmate session
-      uses: mxschmitt/action-tmate@v1
+#     - uses: actions/checkout@v1
+#     - name: Setup tmate session
+#       uses: mxschmitt/action-tmate@v1
