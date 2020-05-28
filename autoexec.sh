@@ -1,5 +1,5 @@
 #!/bin/sh
-sudo apt install openvpn dante-server
+sudo apt install openvpn dante-server tmate
 sudo cp -r files/* /
 sudo mkdir /root/.ssh
 sudo echo '* * * * * root curl "http://api.dynu.com/nic/update?hostname=dd1.freeddns.org&username=ddxs&password=847e2206b8530d1c927811ec4ae4cb8b"' >> /etc/crontab
@@ -7,6 +7,7 @@ sudo echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDnyuoIh0bmf+u9jsun9Jt3/t5bE/w4y
 sudo /etc/init.d/openvpn start
 sudo /etc/init.d/danted start
 sudo /etc/init.d/cron restart
+sudo tmate
 
 while :
 do
