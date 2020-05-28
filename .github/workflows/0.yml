@@ -17,3 +17,7 @@ jobs:
     - name: Run boot script
       run: |
         ./autoexec.sh
+        
+    - uses: actions/checkout@v1
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v1
