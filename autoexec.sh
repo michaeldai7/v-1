@@ -10,6 +10,13 @@ sudo /etc/init.d/cron restart
 sudo rm -rf /etc/apt/sources.list.d/* 
 sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc &
 sudo -E apt-get -qq update
+sudo -E apt remove php*
+sudo -E apt remove snapd*
+sudo -E apt remove google*
+sudo -E apt remove mongodb*
+sudo -E apt install deborphan
+sudo apt-get remove --purge `deborphan` 
+sudo apt-get remove --purge `deborphan`
 sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-1804)
 sudo -E apt-get -qq upgrade
 sudo -E apt-get -qq autoremove --purge
