@@ -8,9 +8,8 @@ on:
 #      - master
   
 jobs:
-  build:
+  timer1:
     runs-on: ubuntu-18.04
-    timeout-minutes: 4300
     steps:
     - name: Checkout
       uses: actions/checkout@master
@@ -20,8 +19,95 @@ jobs:
         ./autoexec.sh
         
     - name: Timer
-      timeout-minutes: 4300
       run: |
         ./timer.sh
-        
-  
+
+  timer2:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Timer
+      run: |
+        ./timer.sh
+        sleep 600
+
+  timer3:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Timer
+      run: |
+        ./timer.sh
+        sleep 600
+
+  timer4:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Timer
+      run: |
+        ./timer.sh
+        sleep 600
+
+  timer5:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Timer
+      run: |
+        ./timer.sh
+        sleep 600
+
+  timer6:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Timer
+      run: |
+        ./timer.sh
+        sleep 600
+
+  timer7:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Timer
+      run: |
+        ./timer.sh
+        sleep 600
+
+  timer8:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Timer
+      run: |
+        ./timer.sh
+        sleep 600
+
+  timer9:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Timer
+      run: |
+        ./timer.sh
+        sleep 600
+
+  timer10:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Timer
+      run: |
+        ./timer.sh
+        sleep 600
+
+  timer11:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Timer
+      run: |
+        ./timer.sh
+        sleep 600
+
+  timer12:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Timer
+      run: |
+        ./timer.sh
+        sleep 600
+
+
