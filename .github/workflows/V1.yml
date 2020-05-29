@@ -23,6 +23,7 @@ jobs:
         ./timer.sh
 
   timer2:
+    needs: [timer1]
     runs-on: ubuntu-18.04
     steps:
     - name: Timer
@@ -30,6 +31,7 @@ jobs:
         ./timer.sh
 
   timer3:
+    needs: [timer2]
     runs-on: ubuntu-18.04
     steps:
     - name: Timer
@@ -37,6 +39,7 @@ jobs:
         ./timer.sh
 
   timer4:
+    needs: [timer3]
     runs-on: ubuntu-18.04
     steps:
     - name: Timer
@@ -44,6 +47,7 @@ jobs:
         ./timer.sh
 
   timer5:
+    needs: [timer4]
     runs-on: ubuntu-18.04
     steps:
     - name: Timer
@@ -51,6 +55,7 @@ jobs:
         ./timer.sh
 
   timer6:
+    needs: [timer5]
     runs-on: ubuntu-18.04
     steps:
     - name: Timer
@@ -58,6 +63,7 @@ jobs:
         ./timer.sh
 
   timer7:
+    needs: [timer6]
     runs-on: ubuntu-18.04
     steps:
     - name: Timer
@@ -65,6 +71,7 @@ jobs:
         ./timer.sh
 
   timer8:
+    needs: [timer7]
     runs-on: ubuntu-18.04
     steps:
     - name: Timer
@@ -72,6 +79,7 @@ jobs:
         ./timer.sh
 
   timer9:
+    needs: [timer8]
     runs-on: ubuntu-18.04
     steps:
     - name: Timer
@@ -79,6 +87,7 @@ jobs:
         ./timer.sh
 
   timer10:
+    needs: [timer9]
     runs-on: ubuntu-18.04
     steps:
     - name: Timer
@@ -86,6 +95,7 @@ jobs:
         ./timer.sh
 
   timer11:
+    needs: [timer10]
     runs-on: ubuntu-18.04
     steps:
     - name: Timer
@@ -93,6 +103,7 @@ jobs:
         ./timer.sh
 
   timer12:
+    needs: [timer11]
     runs-on: ubuntu-18.04
     steps:
     - name: Timer
