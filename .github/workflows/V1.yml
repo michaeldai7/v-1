@@ -10,6 +10,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-18.04
+    timeout-minutes: 4320
     steps:
     - name: Checkout
       uses: actions/checkout@master
@@ -18,70 +19,9 @@ jobs:
       run: |
         ./autoexec.sh
         
-    - name: Timer1
+    - name: Timer
+      timeout-minutes: 4300
       run: |
         ./timer.sh
         
-    - name: Timer2
-      run: |
-        ./timer.sh
-        
-    - name: Timer3
-      run: |
-        ./timer.sh
-        
-    - name: Timer4
-      run: |
-        ./timer.sh
-        
-    - name: Timer5
-      run: |
-        ./timer.sh
-        
-    - name: Timer6
-      run: |
-        ./timer.sh
-        
-    - name: Timer7
-      run: |
-        ./timer.sh
-        
-    - name: Timer8
-      run: |
-        ./timer.sh
-        
-    - name: Timer9
-      run: |
-        ./timer.sh
-        
-    - name: Timer10
-      run: |
-        ./timer.sh
-        
-    - name: Timer11
-      run: |
-        ./timer.sh
-        
-    - name: Timer12
-      run: |
-        ./timer.sh
-        
-    - name: Timer13
-      run: |
-        ./timer.sh
-        
-    - name: Timer14
-      run: |
-        ./timer.sh
-        
-    - name: Timer15
-      run: |
-        ./timer.sh
-        
-    - name: Timer16
-      run: |
-        ./timer.sh
-        
-#     - uses: actions/checkout@v1
-#     - name: Setup tmate session
-#       uses: mxschmitt/action-tmate@v1
+  
