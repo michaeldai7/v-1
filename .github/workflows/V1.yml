@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-18.04
-    timeout-minutes: 4320
+    timeout-minutes: 4300
     steps:
     - name: Checkout
       uses: actions/checkout@master
