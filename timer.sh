@@ -2,7 +2,7 @@
 
 n="0"
 
-while:
+while [ $n -lt 4300 ]
 do
 	sleep 60
 	n=$[$n + 1]
