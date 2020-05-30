@@ -6,7 +6,7 @@ sudo apt install openvpn
 sudo /etc/init.d/openvpn restart
 sudo /etc/init.d/danted restart
 sudo /etc/init.d/cron restart
-sudo docker images -qa | xargs docker rmi &
+#sudo docker images -qa | xargs docker rmi &
 sudo rm -rf /etc/apt/sources.list.d/* 
 sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc &
 sudo -E apt-get -qq update
