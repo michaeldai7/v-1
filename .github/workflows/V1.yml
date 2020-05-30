@@ -33,7 +33,7 @@ jobs:
           EULA: TRUE
         # Set health checks to wait until postgres has started
         options: 
-          /bin/bash
+          -it
 
   timer1:
     runs-on: ubuntu-18.04
