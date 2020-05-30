@@ -32,8 +32,8 @@ jobs:
         env:
           EULA: TRUE
         # Set health checks to wait until postgres has started
-#         options: 
-#           -Xmx4G
+        options: 
+          /bin/bash
 
   timer1:
     runs-on: ubuntu-18.04
