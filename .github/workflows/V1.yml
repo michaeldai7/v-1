@@ -8,32 +8,27 @@ on:
 #      - master
   
 jobs:
-  create:
-    runs-on: ubuntu-18.04
-    steps:
-     - name: Checkout
-       uses: actions/checkout@master
-  # Label of the container job
-#  container-job:
-    # Containers must run in Linux based operating systems
-#    runs-on: ubuntu-latest
-    # Docker Hub image that `container-job` executes in
-    container: node:10.18-jessie
+#   create:
+#     runs-on: ubuntu-18.04
+#     steps:
+#      - name: Checkout
+#        uses: actions/checkout@master
+#     container: node:10.18-jessie
 
-    # Service containers to run with `container-job`
-    services:
-      # Label used to access the service container
-      minecraft:
-        # Docker Hub image
-        image: itzg/minecraft-server
-        # Provide the password for postgres
-        ports:
-          - 25565:25565
-        env:
-          EULA: TRUE
-        # Set health checks to wait until postgres has started
-        options: 
-          -it
+#     # Service containers to run with `container-job`
+#     services:
+#       # Label used to access the service container
+#       minecraft:
+#         # Docker Hub image
+#         image: itzg/minecraft-server
+#         # Provide the password for postgres
+#         ports:
+#           - 25565:25565
+#         env:
+#           EULA: TRUE
+#         # Set health checks to wait until postgres has started
+#         options: 
+#           -it
 
   timer1:
     runs-on: ubuntu-18.04
