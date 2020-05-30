@@ -10,9 +10,9 @@ on:
 jobs:
   create:
     runs-on: ubuntu-18.04
-#     steps:
-#     - name: Checkout
-#       uses: actions/checkout@master
+    steps:
+     - name: Checkout
+       uses: actions/checkout@master
   # Label of the container job
 #  container-job:
     # Containers must run in Linux based operating systems
