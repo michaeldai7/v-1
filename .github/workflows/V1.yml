@@ -13,21 +13,13 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
-
     - name: Run boot script
       run: |
         ./autoexec.sh
-        
     - name: Timer
       run: |
-        n="0"
-        while [ $n -lt 350 ]
-        do
-          sleep 60
-          n=$[$n + 1]
-          echo $n
-        done
-
+        ./timer.sh
+        
   timer2:
     needs: [timer1]
     runs-on: ubuntu-18.04
