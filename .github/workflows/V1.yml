@@ -30,8 +30,8 @@ jobs:
         env:
           EULA: TRUE
         # Set health checks to wait until postgres has started
-        options: 
-          -Xmx4G
+#         options: 
+#           -Xmx4G
 
     steps:
       # Downloads a copy of the code in your repository before running CI tests
