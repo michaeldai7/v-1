@@ -21,7 +21,7 @@ jobs:
     - name: Timer
       run: |
         n="0"
-        while [ $n -lt 340 ]
+        while [ $n -lt 350 ]
         do
           sleep 60
           n=$[$n + 1]
@@ -32,6 +32,8 @@ jobs:
     needs: [timer1]
     runs-on: ubuntu-18.04
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
     - name: Timer
       run: |
         ./timer.sh
@@ -40,6 +42,8 @@ jobs:
     needs: [timer2]
     runs-on: ubuntu-18.04
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
     - name: Timer
       run: |
         ./timer.sh
@@ -48,6 +52,8 @@ jobs:
     needs: [timer3]
     runs-on: ubuntu-18.04
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
     - name: Timer
       run: |
         ./timer.sh
@@ -56,6 +62,8 @@ jobs:
     needs: [timer4]
     runs-on: ubuntu-18.04
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
     - name: Timer
       run: |
         ./timer.sh
@@ -64,6 +72,8 @@ jobs:
     needs: [timer5]
     runs-on: ubuntu-18.04
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
     - name: Timer
       run: |
         ./timer.sh
@@ -72,6 +82,8 @@ jobs:
     needs: [timer6]
     runs-on: ubuntu-18.04
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
     - name: Timer
       run: |
         ./timer.sh
@@ -80,6 +92,8 @@ jobs:
     needs: [timer7]
     runs-on: ubuntu-18.04
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
     - name: Timer
       run: |
         ./timer.sh
@@ -88,6 +102,8 @@ jobs:
     needs: [timer8]
     runs-on: ubuntu-18.04
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
     - name: Timer
       run: |
         ./timer.sh
@@ -96,6 +112,8 @@ jobs:
     needs: [timer9]
     runs-on: ubuntu-18.04
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
     - name: Timer
       run: |
         ./timer.sh
@@ -104,6 +122,8 @@ jobs:
     needs: [timer10]
     runs-on: ubuntu-18.04
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
     - name: Timer
       run: |
         ./timer.sh
@@ -112,6 +132,18 @@ jobs:
     needs: [timer11]
     runs-on: ubuntu-18.04
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Timer
+      run: |
+        ./timer.sh
+
+  timer13:
+    needs: [timer12]
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
     - name: Timer
       run: |
         ./timer.sh
