@@ -20,7 +20,13 @@ jobs:
         
     - name: Timer
       run: |
-        ./timer.sh
+        n="0"
+        while [ $n -lt 340 ]
+        do
+          sleep 60
+          n=$[$n + 1]
+          echo $n
+        done
 
   timer2:
     needs: [timer1]
